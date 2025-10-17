@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/dhinkebein/svelte-heroicons.git"
   },
-  "version": "0.1.8",
+  "version": "0.1.9",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
