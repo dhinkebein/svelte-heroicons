@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/dhinkebein/svelte-heroicons.git"
   },
-  "version": "0.1.9",
+  "version": "0.1.10",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -34,7 +34,11 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
-    }
+    },
+    "./outline": "./dist/outline/index.js",
+    "./outline/*": "./dist/outline/*/index.js",
+    "./solid": "./dist/solid/index.js",
+    "./solid/*": "./dist/solid/*/index.js"
   },
   "files": [
     "dist",
