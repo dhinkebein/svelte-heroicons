@@ -1,0 +1,41 @@
+/** @typedef {typeof __propDef.props}  CreditCardProps */
+/** @typedef {typeof __propDef.events}  CreditCardEvents */
+/** @typedef {typeof __propDef.slots}  CreditCardSlots */
+export default class CreditCard extends SvelteComponent<{
+    [x: string]: any;
+}, {
+    click: PointerEvent;
+    mouseover: MouseEvent;
+    mouseenter: MouseEvent;
+    mouseleave: MouseEvent;
+    keydown: KeyboardEvent;
+} & {
+    [evt: string]: CustomEvent<any>;
+}, {
+    default: {};
+}> {
+}
+export type CreditCardProps = typeof __propDef.props;
+export type CreditCardEvents = typeof __propDef.events;
+export type CreditCardSlots = typeof __propDef.slots;
+import { SvelteComponent } from "svelte";
+declare const __propDef: {
+    props: {
+        [x: string]: any;
+    };
+    events: {
+        click: PointerEvent;
+        mouseover: MouseEvent;
+        mouseenter: MouseEvent;
+        mouseleave: MouseEvent;
+        keydown: KeyboardEvent;
+    } & {
+        [evt: string]: CustomEvent<any>;
+    };
+    slots: {
+        default: {};
+    };
+    exports?: undefined;
+    bindings?: undefined;
+};
+export {};

@@ -1,0 +1,41 @@
+/** @typedef {typeof __propDef.props}  LoginProps */
+/** @typedef {typeof __propDef.events}  LoginEvents */
+/** @typedef {typeof __propDef.slots}  LoginSlots */
+export default class Login extends SvelteComponent<{
+    [x: string]: any;
+}, {
+    click: PointerEvent;
+    mouseover: MouseEvent;
+    mouseenter: MouseEvent;
+    mouseleave: MouseEvent;
+    keydown: KeyboardEvent;
+} & {
+    [evt: string]: CustomEvent<any>;
+}, {
+    default: {};
+}> {
+}
+export type LoginProps = typeof __propDef.props;
+export type LoginEvents = typeof __propDef.events;
+export type LoginSlots = typeof __propDef.slots;
+import { SvelteComponent } from "svelte";
+declare const __propDef: {
+    props: {
+        [x: string]: any;
+    };
+    events: {
+        click: PointerEvent;
+        mouseover: MouseEvent;
+        mouseenter: MouseEvent;
+        mouseleave: MouseEvent;
+        keydown: KeyboardEvent;
+    } & {
+        [evt: string]: CustomEvent<any>;
+    };
+    slots: {
+        default: {};
+    };
+    exports?: undefined;
+    bindings?: undefined;
+};
+export {};

@@ -1,0 +1,41 @@
+/** @typedef {typeof __propDef.props}  CheckProps */
+/** @typedef {typeof __propDef.events}  CheckEvents */
+/** @typedef {typeof __propDef.slots}  CheckSlots */
+export default class Check extends SvelteComponent<{
+    [x: string]: any;
+}, {
+    click: PointerEvent;
+    mouseover: MouseEvent;
+    mouseenter: MouseEvent;
+    mouseleave: MouseEvent;
+    keydown: KeyboardEvent;
+} & {
+    [evt: string]: CustomEvent<any>;
+}, {
+    default: {};
+}> {
+}
+export type CheckProps = typeof __propDef.props;
+export type CheckEvents = typeof __propDef.events;
+export type CheckSlots = typeof __propDef.slots;
+import { SvelteComponent } from "svelte";
+declare const __propDef: {
+    props: {
+        [x: string]: any;
+    };
+    events: {
+        click: PointerEvent;
+        mouseover: MouseEvent;
+        mouseenter: MouseEvent;
+        mouseleave: MouseEvent;
+        keydown: KeyboardEvent;
+    } & {
+        [evt: string]: CustomEvent<any>;
+    };
+    slots: {
+        default: {};
+    };
+    exports?: undefined;
+    bindings?: undefined;
+};
+export {};
